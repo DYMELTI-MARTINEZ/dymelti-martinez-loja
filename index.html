@@ -1,113 +1,16 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Dymelti Martinez</title>
-  <style>
-    body {
-      font-family: sans-serif;
-      background: linear-gradient(to right, #000000, #1a0033, #330066);
-      color: white;
-      margin: 0;
-      padding: 0 20px;
-    }
-
-    header {
-      background: black;
-      padding: 20px;
-      text-align: center;
-    }
-
-    .letreiro {
-      white-space: nowrap;
-      overflow: hidden;
-      box-sizing: border-box;
-    }
-
-    .letreiro span {
-      display: inline-block;
-      padding-left: 100%;
-      animation: marquee 10s linear infinite;
-      font-size: 24px;
-      font-weight: bold;
-      color: #bb86fc;
-    }
-
-    @keyframes marquee {
-      0% { transform: translateX(0); }
-      100% { transform: translateX(-100%); }
-    }
-
-    .produto {
-      background: #1a0033;
-      margin: 20px 0;
-      padding: 15px;
-      border-radius: 10px;
-      box-shadow: 0 0 10px #00000080;
-    }
-
-    button {
-      background: #bb86fc;
-      border: none;
-      padding: 10px 15px;
-      border-radius: 5px;
-      color: black;
-      font-weight: bold;
-      cursor: pointer;
-    }
-
-    .carrinho {
-      background: #220044;
-      padding: 15px;
-      border-radius: 10px;
-      margin-top: 30px;
-    }
-
-    a#pedido-final {
-      display: inline-block;
-      margin-top: 10px;
-      padding: 10px;
-      background: #03dac5;
-      color: black;
-      border-radius: 5px;
-      text-decoration: none;
-      font-weight: bold;
-    }
-  </style>
-</head>
-<body>
-  <header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>DYMELTI MARTINEZ</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <div class="letreiro">
-      <span>DYMELTI MARTINEZ - Loja Online 💜</span>
+      <div class="texto">
+        DYMELTI MARTINEZ DYMELTI MARTINEZ DYMELTI MARTINEZ DYMELTI MARTINEZ DYMELTI MARTINEZ DYMELTI MARTINEZ DYMELTI MARTINEZ DYMELTI MARTINEZ DYMELTI MARTINEZ DYMELTI MARTINEZ DYMELTI MARTINEZ DYMELTI MARTINEZ
+      </div>
     </div>
-  </header>
-
-  <h2>Produtos</h2>
-
-  <div class="produto">
-    <h3>Produto 1</h3>
-    <p>Descrição breve</p>
-    <p><strong>R$ 39,90</strong></p>
-    <button onclick="adicionarAoCarrinho('Produto 1', 39.90)">Adicionar ao carrinho</button>
-  </div>
-
-  <div class="produto">
-    <h3>Produto 2</h3>
-    <p>Outro produto legal</p>
-    <p><strong>R$ 59,90</strong></p>
-    <button onclick="adicionarAoCarrinho('Produto 2', 59.90)">Adicionar ao carrinho</button>
-  </div>
-
-  <div class="carrinho">
-    <h3>Carrinho</h3>
-    <ul id="lista-carrinho"></ul>
-    <p id="total">Total: R$ 0,00</p>
-    <a id="pedido-final" href="#" target="_blank">Finalizar pedido via WhatsApp</a>
-  </div>
-
-  <p style="margin-top: 40px; font-size: 12px;">Instagram: @dymelti_martinez | WhatsApp: +55 62 99880-6950</p>
-
-  <script src="script.js"></script>
-</body>
+  </body>
 </html>
