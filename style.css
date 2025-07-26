@@ -1,28 +1,33 @@
 body {
   margin: 0;
-  background-color: #000000;
+  background-color: #000; /* fundo preto */
   overflow-x: hidden;
 }
 
 .letreiro {
   width: 100%;
-  white-space: nowrap;
   overflow: hidden;
-  background: linear-gradient(90deg, #6A0DAD, #000000, #0000FF);
+  background: linear-gradient(90deg, #6A0DAD, #000000, #0000FF); /* roxo, preto e azul */
   padding: 10px 0;
 }
 
 .texto {
   display: inline-block;
+  white-space: nowrap;
+  animation: rolar 15s linear infinite;
+}
+
+.texto span {
   font-size: 24px;
   color: white;
   font-weight: bold;
-  animation: rolar 15s linear infinite;
+  padding-left: 100%;
+  display: inline-block;
 }
 
 @keyframes rolar {
   0% {
-    transform: translateX(100%);
+    transform: translateX(0%);
   }
   100% {
     transform: translateX(-100%);
